@@ -1,0 +1,6 @@
+{
+    // "warn-list": "-A",
+    "import": [
+      "myfreess/charclass/unicode"
+    ]
+}
