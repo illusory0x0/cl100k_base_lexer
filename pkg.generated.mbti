@@ -1,13 +1,32 @@
 // Generated using `moon info`, DON'T EDIT IT
-package "username/hello"
+package "illusory0x0/cl100k_base_lexer"
 
 // Values
+fn tokenize(StringView) -> StringView?
+
+fn tokenize_all(StringView) -> Array[StringView]
+
+fn tokenize_part1(StringView) -> StringView raise BackTracing
+
+fn tokenize_part2(StringView) -> StringView raise BackTracing
+
+fn tokenize_part3(StringView) -> StringView raise BackTracing
+
+fn tokenize_part4(StringView) -> StringView raise BackTracing
+
+fn tokenize_part5(StringView) -> StringView raise BackTracing
+
+fn tokenize_part6(StringView) -> StringView raise BackTracing
+
+fn tokenize_part7(StringView) -> StringView raise BackTracing
+
+fn tokenize_part8(StringView) -> StringView raise BackTracing
 
 // Errors
-type LexerError
-impl Eq for LexerError
-impl Show for LexerError
-impl ToJson for LexerError
+type BackTracing
+impl Eq for BackTracing
+impl Show for BackTracing
+impl ToJson for BackTracing
 
 // Types and methods
 

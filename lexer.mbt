@@ -343,7 +343,7 @@ pub fn tokenize_part5(input : StringView) -> StringView raise BackTracing {
     (len, [ch, .. rest]) if is_space(ch) =>
       continue (len + ch.utf16_len(), rest)
     (len, []) => break len // end of string
-    (len, _) => break 0 // non-whitespace found, not at end
+    (_, _) => break 0 // non-whitespace found, not at end
   }
   if len == 0 || len < input.length() {
     // Either no whitespace found or not at end of string
