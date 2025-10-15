@@ -105,18 +105,18 @@ suberror BackTracing derive(Show, ToJson, Eq)
 pub fn tokenize_part1(input : StringView) -> StringView raise BackTracing {
   lexmatch input {
     // "sdmt" case insensitive
-    "'s" as matched, _ => matched
-    "'S" as matched, _ => matched
-    "'d" as matched, _ => matched
-    "'D" as matched, _ => matched
-    "'m" as matched, _ => matched
-    "'M" as matched, _ => matched
-    "'t" as matched, _ => matched
-    "'T" as matched, _ => matched
+    ("'s" as matched, _) => matched
+    ("'S" as matched, _) => matched
+    ("'d" as matched, _) => matched
+    ("'D" as matched, _) => matched
+    ("'m" as matched, _) => matched
+    ("'M" as matched, _) => matched
+    ("'t" as matched, _) => matched
+    ("'T" as matched, _) => matched
     // "ll", "ve", "re" case sensitive
-    "'ll" as matched, _ => matched
-    "'ve" as matched, _ => matched
-    "'re" as matched, _ => matched
+    ("'ll" as matched, _) => matched
+    ("'ve" as matched, _) => matched
+    ("'re" as matched, _) => matched
     // no match
     _ => raise BackTracing
   }
