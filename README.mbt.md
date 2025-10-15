@@ -1,0 +1,1 @@
+When [#63](https://github.com/moonbitlang/maria/pull/63) is merged, this repo will be deleted.
